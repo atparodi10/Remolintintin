@@ -8,8 +8,7 @@ filas = 5
 computadoras_por_fila = 4
 
 # El bucle principal es para cada laboratorio. 
-# NOTA: Falta la línea 'laboratorios = 2', está comentada arriba. Debe descomentarse para funcionar.
-for lab in range(laboratorios):  
+
     print(f"\nLaboratorio {lab + 1}")  # Muestra el número del laboratorio actual (comienza desde 1)
     
     computadoras = ()  # Se inicializa una tupla vacía que almacenará las filas del laboratorio
