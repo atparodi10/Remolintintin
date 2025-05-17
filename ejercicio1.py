@@ -23,7 +23,6 @@ total_nj = 0
 total_j = 0
 
 for i in range(aulas): # en este ciclo definimos que la variable i se va a iterar en el rango de inicialización 0 hasta el rango de aulas(3)
-    limpiar_consola() # Mandamos a llamar la funcion para que cada vez que se vuelva a iterar se limpia la pantalla
     
     print(f"Sección: {i + 1}") # imprimimos el número de seccion segun su rango y le sumamos uno ya que esta inicializada en 0
     
@@ -74,11 +73,13 @@ for i in range(aulas): # en este ciclo definimos que la variable i se va a itera
                     
                     else: # muestra mensaje de error en dado caso de no ingresar una opción valida
                         print("⚠️  Opción no válida. Intente nuevamente.\n")
+    
         # Luego de que se acumulen las variables contadoras por días se le suman a una general donde se acumulan en total por días y así mismo por semana       
         total_p += presente 
         total_nj += falta_no_justificada       
         total_j += falta_justificada        
-                
+        
+        limpiar_consola() # Mandamos a llamar la funcion para que cada vez que se vuelva a iterar se limpia la pantalla
         # Mostramos por pantalla el resumen o el total de asistencias por día
         print("-"*5,"Resumen por Día","-"*5)
         print(f"Día: {dia}")
