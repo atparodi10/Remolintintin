@@ -90,7 +90,7 @@ for i in range(aulas): # en este ciclo definimos que la variable i se va a itera
 
 # creamos un arreglo con subarreglos para poder usar la función tabulate para crear una tabla visual para mostrar al usario
 resumen_semanal = [ # los corchetes principales son la lista principal
-    # aquí creamos la sublistas con su tipo de dato y valor para mostrar y ordenar en la tabla, se separan cada una con , eso es equivalente a resumen_semanal[presentes[], faltas injustificadas[], faltas_justificadas[]]
+    # aquí creamos la sublistas con su tipo de dato y valor para mostrar y ordenar en la tabla, se separan cada una con , 
     ["Presentes", total_p],
     ["Faltas Injustificadas", total_nj],
     ["Faltas Justificadas", total_j]
