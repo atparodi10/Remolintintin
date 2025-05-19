@@ -43,8 +43,8 @@ for i in range(aulas): # en este ciclo definimos que la variable i se va a itera
                 print("Ingrese estado de asistencia:")
                 # Se le muestra al usuario las opciones para poder asignar la asistencia tanto como la inicial como la palabra completa
                 print(" [P]  Presente") 
-                print(" [INJ] Inasistencia No Justificada")
-                print(" [IJ]  Inasistencia Justificada")
+                print(" [FNJ] Inasistencia No Justificada")
+                print(" [FJ]  Inasistencia Justificada")
                 
                 # Entrada por teclado donde el usuario ingresa el estado de asistencia y poder realizar las validaciones correspondientes
                 asistencia = input(">>").strip().lower() # .strip() para eliminar los espacios en blanco y .lower() para convertir la cadena en minúsculas
@@ -82,6 +82,7 @@ for i in range(aulas): # en este ciclo definimos que la variable i se va a itera
         limpiar_consola() # Mandamos a llamar la funcion para que cada vez que se vuelva a iterar se limpia la pantalla
         # Mostramos por pantalla el resumen o el total de asistencias por día
         print("-"*5,"Resumen por Día","-"*5)
+        print(f"Aula: {i + 1}")
         print(f"Día: {dia}")
         print(f"Presentes: {presente}")
         print(f"Faltas No Justificadas: {falta_no_justificada}")
@@ -89,7 +90,7 @@ for i in range(aulas): # en este ciclo definimos que la variable i se va a itera
 
 # creamos un arreglo con subarreglos para poder usar la función tabulate para crear una tabla visual para mostrar al usario
 resumen_semanal = [ # los corchetes principales son la lista principal
-    # aquí creamos la sublistas con su tipo de dato y valor para mostrar y ordenar en la tabla, se separan cada una con , eso es equivalente a resumen_semanal[[presentes], [faltas injustificadas][faltas_justificadas]]
+    # aquí creamos la sublistas con su tipo de dato y valor para mostrar y ordenar en la tabla, se separan cada una con , eso es equivalente a resumen_semanal[presentes[], faltas injustificadas[], faltas_justificadas[]]
     ["Presentes", total_p],
     ["Faltas Injustificadas", total_nj],
     ["Faltas Justificadas", total_j]
