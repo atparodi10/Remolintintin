@@ -103,4 +103,4 @@ print(f"Dias: {len(dias)}") # imprimimos la cantidad de días en lo que se calcu
 print(f"Estudiantes: {estudiantes}") # imprimimos el valor de la varible estudiantes (6)
 # Está es la sintaxis para imprimir la tabla con la librería tabulate 
 print(tabulate(resumen_semanal, headers=["Tipo de Asistencia", "Cantidad"], tablefmt="grid")) 
-#       función tabulate, lista donde se almacenán los valores, headers= son los encabezados de la tabla, y tablefmt= es l tipo de tabla o estilo que le estamos asigando, en este caso grid=(cuadro con bordes)
+#       función tabulate, lista donde se almacenán los valores, headers= son los encabezados de la tabla, y tablefmt= es el tipo de tabla o estilo que le estamos asigando, en este caso grid=(cuadro con bordes)
